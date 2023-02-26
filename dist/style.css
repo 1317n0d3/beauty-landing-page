@@ -159,3 +159,30 @@ header {
       display: flex;
       align-items: center; }
 
+.contacts {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px calc(50% - 555px);
+  align-items: center; }
+  .contacts__links {
+    display: flex; }
+    .contacts__links button {
+      display: flex;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #66C05D;
+      margin-left: 20px; }
+
+.privacy-policy {
+  margin: 20px 0;
+  padding: 0 calc(50% - 555px);
+  display: flex;
+  justify-content: space-between; }
+  .privacy-policy p {
+    color: #828282;
+    font-size: 12px; }
+
