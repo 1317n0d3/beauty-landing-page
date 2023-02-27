@@ -79,6 +79,8 @@ header {
   &__number {
     font-size: 16px;
     margin-right: 40px;
+    text-decoration: none;
+    color: #000000;
   }
 
   &__button {
@@ -122,6 +124,8 @@ header {
   &__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   &__item-card {
@@ -167,6 +171,8 @@ header {
   justify-content: space-between;
   padding: 0 calc(50% - 555px);
   margin: 100px 0;
+  flex-wrap: wrap;
+  gap: 20px;
 
   &__card {
     width: 460px;
@@ -245,5 +251,109 @@ header {
   p {
     color: #828282;
     font-size: 12px;
+  }
+}
+
+@media (min-width: 575.98px) {
+
+  .special-offers,
+  .advertisement,
+  .privacy-policy {
+    padding: 0 calc(50vw - 270px);
+  }
+
+  header {
+    padding: 20px calc(50vw - 270px);
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .special-offers {
+    &__items {
+      justify-content: center;
+    }
+  }
+
+  .banner {
+    padding: 16px calc(50vw - 300px);
+  }
+
+  .contacts {
+    padding: 38px calc(50vw - 270px);
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 767.98px) {
+
+  .banner {
+    padding: 40px calc(50vw - 320px);
+  }
+}
+
+@media (min-width: 991.98px) {
+
+  .privacy-policy {
+    padding: 0 calc(50vw - 480px);
+  }
+
+  .special-offers {
+    padding: 0 calc(50vw - 480px);
+
+    &__items {
+      justify-content: space-between;
+    }
+  }
+
+  header {
+    padding: 20px calc(50vw - 480px);
+    flex-direction: row;
+  }
+
+  .main-menu {
+    flex-direction: row;
+  }
+
+  .banner {
+    padding: 100px calc(50vw - 480px);
+  }
+
+  .contacts {
+    padding: 28px calc(50vw - 480px);
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1199.98px) {
+
+  .special-offers,
+  .advertisement,
+  .privacy-policy {
+    padding: 0 calc(50vw - 590px);
+  }
+
+  header {
+    padding: 20px calc(50vw - 590px);
+  }
+
+  .banner {
+    padding: 122px calc(50vw - 590px);
+  }
+
+  .contacts {
+    padding: 38px calc(50vw - 590px);
+  }
+}
+
+@media (min-width: 1399.98px) {
+
+  .banner {
+    padding: 192px calc(50vw - 590px);
   }
 }
